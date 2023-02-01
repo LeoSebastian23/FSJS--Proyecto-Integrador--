@@ -6,7 +6,7 @@ import productsRoutes from './routes/products.routes.js'
 
 const app = express() 
 
-// middlewares
+//---------------------------
 app.use(express.json())
 app.use(fileUpload({
     useTempFiles: true,
@@ -14,7 +14,7 @@ app.use(fileUpload({
 }))
 
 
-// routes
+// --------------------------
 app.use(productsRoutes)
 
 export default app
