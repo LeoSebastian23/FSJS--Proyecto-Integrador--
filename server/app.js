@@ -4,7 +4,7 @@ import fileUpload from 'express-fileupload'
 import productsRoutes from './routes/products.routes.js'
 
 
-const app = express()
+const app = express() 
 
 // middlewares
 app.use(express.json())

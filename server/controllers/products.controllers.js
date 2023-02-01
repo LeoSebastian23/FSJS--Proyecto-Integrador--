@@ -67,7 +67,7 @@ export const updateProducts = async (req, res) => {
             new: true,
         }); //devuelve objeto actualizado
         console.log(producto);
-        return res.send("producto");
+        return res.send(producto);
     } catch (error) {
         return res.status(500).json({
             message: error.message,
